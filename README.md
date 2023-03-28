@@ -1,7 +1,8 @@
 # Probability Distributions Library for JavaScript
 Functions for sampling random variables from probability distributions. Uses the same function names as R.
 
-Adapted from https://github.com/Mattasher/probability-distributions in order to use its functions in https://k6.io/ scripts.
+Adapted from https://github.com/Mattasher/probability-distributions in order to use its functions in https://k6.io/ scripts without any external dependencies.
+
 
 ## Installation
 

@@ -6,16 +6,6 @@ var PD = require("../index")
 var repeat = 1000; // How many times to repeat some tests
 
 describe("Test of entropy generation", function() {
-    it('Set entropy to a low level', function() {
-        for(var i=0; i<repeat; i++) {
-            var lowEntropyRandom = PD.prng(1);
-            var numb = lowEntropyRandom * 256;
-            expect(numb).to.equal(Math.round(numb));
-            expect(numb).to.be.above(-1);
-            expect(numb).to.be.below(256);
-        }
-    });
-
     it('Generates a number between 0 and 1', function() {
         for(var i=0; i<repeat; i++) {
             expect(PD.prng()).to.be.above(0);

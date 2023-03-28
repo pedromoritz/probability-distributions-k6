@@ -12,8 +12,6 @@
  *
  * ================================================================ */
 
-var crypto = require('crypto');
-
 // Shortcuts
 var exp = Math.exp;
 var ln = Math.log;
@@ -30,15 +28,7 @@ module.exports = {
      *
      */
     prng: function(len) {
-        if(len === undefined) len=16;
-
-        var entropy = crypto.randomBytes(len);
-        var result = 0;
-
-        for(var i=0; i<len; i++) {
-            result = result + Number(entropy[i])/Math.pow(256,(i+1))
-        }
-        return result
+        return Math.random();
     },
 
 

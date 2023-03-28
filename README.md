@@ -1,11 +1,13 @@
 # Probability Distributions Library for JavaScript
 Functions for sampling random variables from probability distributions. Uses the same function names as R.
 
+Adapted from https://github.com/Mattasher/probability-distributions in order to use its functions in https://k6.io/ scripts.
+
 ## Installation
 
-`npm install --save probability-distributions`
+`npm install --save probability-distributions-k6`
 
-`var PD = require("probability-distributions");`
+`import PD from './node_modules/probability-distributions-k6/index.js';`
 
 ## Documentation and examples
 **See <a href="http://statisticsblog.com/probability-distributions/">http://statisticsblog.com/probability-distributions/</a>**
